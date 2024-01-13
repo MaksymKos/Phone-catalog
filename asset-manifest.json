@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/phone-catalog/static/css/main.ca1f84e3.css",
+    "main.js": "/phone-catalog/static/js/main.f53cd316.js",
+    "static/media/category-accessories.png": "/phone-catalog/static/media/category-accessories.e47d6d6df68a6548e82b.png",
+    "static/media/Mont-Regular.otf": "/phone-catalog/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "/phone-catalog/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "/phone-catalog/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "static/media/banner-tablets.jpeg": "/phone-catalog/static/media/banner-tablets.0b6b4a5ec00060ee904c.jpeg",
+    "static/media/banner-phones_new.webp": "/phone-catalog/static/media/banner-phones_new.5ee50684a511cbcc7322.webp",
+    "static/media/category-tablets_new.webp": "/phone-catalog/static/media/category-tablets_new.219649ca366aeb37e1fb.webp",
+    "static/media/apple-logo.png": "/phone-catalog/static/media/apple-logo.d5aa0a96e7839ba65666.png",
+    "static/media/category-phone.jpeg": "/phone-catalog/static/media/category-phone.6d6227621c42bff14cde.jpeg",
+    "static/media/banner-accessories.png": "/phone-catalog/static/media/banner-accessories.bdd2e0fca0159e52f41c.png",
+    "static/media/404-page.png": "/phone-catalog/static/media/404-page.59150bd0bc8c5075186f.png",
+    "static/media/apple-logo.svg": "/phone-catalog/static/media/apple-logo.a9c4e42b5ede80d5d9db.svg",
+    "static/media/slick.svg": "/phone-catalog/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/phone-catalog/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/phone-catalog/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/Card.svg": "/phone-catalog/static/media/Card.89133a0a9c316350dc18.svg",
+    "static/media/Favourites.svg": "/phone-catalog/static/media/Favourites.420ab37df22dfad9055f.svg",
+    "static/media/slick.woff": "/phone-catalog/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/Home.svg": "/phone-catalog/static/media/Home.f28213b9be758981c870.svg",
+    "static/media/Favourites__red.svg": "/phone-catalog/static/media/Favourites__red.7d28319f2ddc7099059c.svg",
+    "static/media/Search.svg": "/phone-catalog/static/media/Search.1e77bbf11368a75dc2b8.svg",
+    "static/media/Close.svg": "/phone-catalog/static/media/Close.c0b1179e5233462d1ff3.svg",
+    "static/media/Close-gray.svg": "/phone-catalog/static/media/Close-gray.d99189a57063cb02e093.svg",
+    "static/media/Plus.svg": "/phone-catalog/static/media/Plus.60b4bc00b53298abd3e7.svg",
+    "static/media/menu.svg": "/phone-catalog/static/media/menu.24035ee6795dddbef862.svg",
+    "static/media/Arrow.svg": "/phone-catalog/static/media/Arrow.470683b8f5a4c1d2e2a4.svg",
+    "static/media/Arrow_gray.svg": "/phone-catalog/static/media/Arrow_gray.bca5376b1db38a7323e9.svg",
+    "index.html": "/phone-catalog/index.html",
+    "static/media/Minus_gray.svg": "/phone-catalog/static/media/Minus_gray.31076ee74f691c386134.svg",
+    "main.ca1f84e3.css.map": "/phone-catalog/static/css/main.ca1f84e3.css.map",
+    "main.f53cd316.js.map": "/phone-catalog/static/js/main.f53cd316.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca1f84e3.css",
+    "static/js/main.f53cd316.js"
+  ]
+}
