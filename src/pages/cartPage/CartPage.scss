@@ -1,0 +1,139 @@
+@import "/src/styles/utils/vars";
+@import "/src/styles/utils/mixins";
+
+.cart {
+  @include contentPaddingInline;
+  // width: 100vw;
+
+  &__utils {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    margin-top: 24px;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+
+    &__price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 25vh;
+      border: 1px solid $elements;
+
+      @include onDesktop {
+        padding: 25px;
+        width: 368px;
+        height: 206px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      border: 1px solid $elements;
+      margin-bottom: 16px;
+
+      @include onTablet {
+        flex-direction: row;
+      }
+
+      @include onDesktop {
+        width: 60vw;
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+
+        @include onTablet {
+          flex-direction: row;
+          gap: 5%;
+          height: 128px;
+        }
+
+        @include onDesktop {
+          min-width: 560px;
+        }
+      }
+
+      &-top {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @include onTablet {
+          width: 50%;
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        justify-content: space-between;
+
+        @include onTablet {
+          width: 50%;
+          justify-content: space-around;
+        }
+      }
+
+      &__image {
+        height: 66px;
+        width: 66px;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.09);
+        }
+      }
+
+      &__button {
+        padding: 10px;
+        border: 1px solid $elements;
+        background-color: #fff;
+
+        &-cross {
+          padding: 5px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__message {
+    display: none;
+    position: absolute;
+    top: 200px;
+  }
+}
+
+.price__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $elements;
+  margin-bottom: 24px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}

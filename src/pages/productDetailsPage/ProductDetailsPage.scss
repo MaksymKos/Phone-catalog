@@ -1,0 +1,335 @@
+@import "/src/styles/utils/vars";
+@import "/src/styles/utils/mixins";
+
+.details {
+  @include contentPaddingInline;
+
+  &__header {
+    margin-bottom: 40px;
+  }
+  &__bread-crumbs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  &__link-back {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+  &__main-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include onTablet {
+      justify-content: space-around;
+      gap: 25px;
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      gap: 75px;
+    }
+  }
+  &__image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+
+    @include onTablet {
+      width: 29px;
+      height: 29px;
+    }
+
+    @include onDesktop {
+      width: 66px;
+      height: 66px;
+    }
+
+    &-container {
+      width: 55px;
+      height: 55px;
+      border: 1px solid #c4c4c4;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 17px;
+      cursor: pointer;
+
+      @include onTablet {
+        width: 34px;
+        height: 34px;
+      }
+
+      @include onDesktop {
+        width: 80px;
+        height: 80px;
+      }
+
+      &--selected {
+        border: 1px solid $primary;
+      }
+    }
+
+    &--selected {
+      width: max-content;
+      height: max-content;
+      object-fit: contain;
+      object-position: center;
+
+      @include onDesktop {
+        width: 442px;
+        height: 442px;
+      }
+
+      &-container {
+        display: grid;
+        place-items: center;
+
+        @include onTablet {
+          display: block;
+          width: 287px;
+          height: 287px;
+        }
+
+        @include onDesktop {
+          width: 464px;
+          height: 464px;
+        }
+      }
+    }
+  }
+}
+
+.images-block {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 25px;
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    @include onTablet {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.options-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onTablet {
+    max-width: 450px;
+  }
+
+  @include onDesktop {
+    max-width: 550px;
+    align-items: flex-start;
+  }
+
+  &__colors {
+    width: 100%;
+    border-bottom: 1px solid $elements;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      display: block;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__colorInside {
+      display: block;
+      width: 29px;
+      height: 29px;
+      border-radius: 100%;
+      border: 2px solid $white;
+    }
+
+    &-block {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    &__color {
+      border: 1px solid $elements;
+      border-radius: 100%;
+
+      &:hover {
+        border-color: $icons;
+        box-shadow: 0 3px 13px 0 rgba(23, 32, 49, 0.26);
+      }
+
+      &--isActive {
+        border-color: $primary;
+        cursor: default;
+      }
+    }
+  }
+
+  &__capacity {
+    width: 100%;
+    border-bottom: 1px solid $elements;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      display: block;
+    }
+
+    &-input {
+      cursor: pointer;
+      width: 56px;
+      height: 32px;
+      border: 1px solid $secondary;
+      background-color: $white;
+      text-align: center;
+      margin-top: 8px;
+      margin-right: 8px;
+
+      &:hover {
+        box-shadow: 1px 3px 13px 1px rgba(23, 32, 49, 0.26);
+      }
+
+      &--selected {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+
+    &-regular {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: -0.32px;
+      margin-right: 8px;
+    }
+    &-discount {
+      color: $secondary;
+      font-size: 22px;
+      font-weight: 500;
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 32px;
+
+    @include onTablet {
+      justify-content: center;
+    }
+
+    &__cart {
+      width: 100%;
+
+      @include onTablet {
+        width: 180px;
+        height: 48px;
+      }
+
+      @include onDesktop {
+        width: 263px;
+        height: 48px;
+      }
+    }
+
+    &__fav {
+      @include onTablet {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  &__details {
+    width: 100%;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.descrition-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+
+  @include onTablet {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  &__header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $elements;
+    margin-bottom: 15px;
+  }
+
+  &__about {
+    @include onTablet {
+      width: 50%;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+      &__header {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__tech-specs {
+    @include onTablet {
+      width: 50%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "./styles/index";
+@import "./styles/utils/mixins";
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    flex: 1;
+    margin-bottom: 80px;
+  }
+}
